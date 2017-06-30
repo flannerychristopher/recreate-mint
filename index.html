@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mint > Start Here</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+  <body>
+
+    <div class='margin'></div>
+
+    <div id='content'>
+
+<!-- top margin div that disappears on smaller screens -->
+      <div id='top'>top</div>
+
+<!-- logo and signup signin tabs -->
+      <div id='logoTabs'>
+        <div id='logo'>
+          <a href='#'><img src='img/logo.png'></a>
+        </div>
+        <div id='tabs'>
+          <h2>
+            <ul>
+              <li><a href='#'>Sign up</a></li>
+              |
+              <li><a href='#'>Log in</a></li>
+            </ul>
+          </h2>
+        </div>
+      </div>
+
+<!-- main form -->
+      <div id='signupBody'>
+        <div id='signupForm'>
+          <span>See all your finances in one place</span>
+
+          <fieldset>
+            <label id='emailLabel' class= 'inputLabel' for='emailInput'>
+              Your Email
+            </label>
+            <div class='inputContainer'>
+              <input id='emailInput' class='textInput' placeholder="You'll verify this later"
+                     maxlength="100" type="email" autocomplete="off" aria-required="true"
+                     required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label id='confirmEmailLabel' class= 'inputLabel' for='confirmEmailInput'>
+              Confirm Email
+            </label>
+            <div class='inputContainer'>
+                <input id='confirmEmailInput' class='textInput' placeholder=""
+                       maxlength="100" type="email" autocomplete="off" aria-required="true">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label id='phoneLabel' class= 'inputLabel' for='phoneInput'>
+              Phone (recommended)
+            </label>
+            <div class='inputContainer'>
+                <input id='phoneInput' class='textInput'
+                       placeholder="Helps with lost passwords and security"
+                       maxlength="30" type="tel" autocomplete="off">
+                <span>
+                  Standard call, messaging or data rates may apply.
+                </span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label id='passwordLabel' class= 'inputLabel' for='passwordInput'>
+              Password
+            </label>
+            <div class='inputContainer'>
+                <input id='passwordInput' class='textInput'
+                       placeholder="Don't reuse an old password"
+                       maxlength="50" type="password" autocomplete="new-password"
+                       aria-required="true">
+                <div id='lock'></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label id='confirmPasswordLabel' class= 'inputLabel' for='confirmPasswordInput'>
+              Confirm Password
+            </label>
+            <div class='inputContainer'>
+                <input id='confirmPasswordInput' class='textInput'
+                       maxlength="50" type="password" autocomplete="new-password"
+                       aria-required="true" required>
+            </div>
+          </fieldset>
+
+          <div id='rememberDiv'>
+            <input id='rememberBox' type='checkbox'>
+            <label id='rememberLabel' class= 'inputLabel' for='rememberBox'>
+              Remember me
+            </label>
+          </div>
+
+          <div id='signupAction'>
+
+            <button id='submitButton' class='btn' type='submit' name='signup'></button>
+            <span>
+              By clicking Sign Up you agree to our
+              <a href='#'>Terms of Use</a>
+              and
+              <a href='#'>Privacy Statement</a>
+            </span>
+
+          </div>
+
+        </div>
+
+        <div id='aside'>aside</div>
+
+      </div>
+
+<!-- footer -->
+      <div id='footer'>
+        <div id='infoLinks'>infoLinks</div>
+        <div id='statement'>statement</div>
+        <div id='securityLinks'>securityLinks</div>
+        <div id='copyright'>copyright</div>
+
+      </div>
+
+    </div>
+
+    <div class='margin'></div>
+
+  </body>
+</html>
