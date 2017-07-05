@@ -1,0 +1,33 @@
+footer
+  +equal-space(column)
+  height: 13.125em
+  margin: 6.26em 0
+  // background: grey
+  #infoLinks
+    background: rgb(176, 182, 230)
+    margin: 0 12%
+    ul
+      +equal-space(row)
+      li a
+        text-decoration: none
+        color: $grey
+        &:hover
+          text-decoration: underline
+  #statement
+    background: yellow
+    text-align: center
+    a
+      +brand-link
+      &:hover
+        text-decoration: underline
+  #securityLinks
+    // height: 100px
+    background: red
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      margin: 1em
+
+  #copyright
+    background: orange

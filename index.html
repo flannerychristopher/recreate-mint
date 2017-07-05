@@ -17,18 +17,18 @@
     <div id='content'>
 
 <!-- top margin div that disappears on smaller screens -->
-      <div id='top'>top</div>
+      <div></div>
 
 <!-- logo and signup signin tabs -->
       <div id='logoTabs'>
-        <div id='logo'>
+        <div>
           <a href='#'><img src='img/logo.png'></a>
         </div>
-        <div id='tabs'>
+        <div>
           <h2>
             <ul>
-              <li><a href='#'>Sign up</a></li>
-              |
+              <li><a href='#' class="active">Sign up</a></li>
+              <li>&#124;</li>
               <li><a href='#'>Log in</a></li>
             </ul>
           </h2>
@@ -36,8 +36,8 @@
       </div>
 
 <!-- main form -->
-      <div id='signupBody'>
-        <div id='signupForm'>
+      <div id='signupbody'>
+        <div id='signupform'>
           <span>See all your finances in one place</span>
 
           <fieldset>
@@ -45,9 +45,10 @@
               Your Email
             </label>
             <div class='inputContainer'>
-              <input id='emailInput' class='textInput' placeholder="You'll verify this later"
+              <input type="text" id='emailInput' class='textInput'
+                     placeholder="You'll verify this later"
                      maxlength="100" type="email" autocomplete="off" aria-required="true"
-                     required>
+                    required>
             </div>
           </fieldset>
 
@@ -56,7 +57,7 @@
               Confirm Email
             </label>
             <div class='inputContainer'>
-                <input id='confirmEmailInput' class='textInput' placeholder=""
+                <input type="text" id='confirmEmailInput' class='textInput' placeholder=""
                        maxlength="100" type="email" autocomplete="off" aria-required="true">
             </div>
           </fieldset>
@@ -66,9 +67,10 @@
               Phone (recommended)
             </label>
             <div class='inputContainer'>
-                <input id='phoneInput' class='textInput'
+                <input type="tel" id='phoneInput' class='textInput'
                        placeholder="Helps with lost passwords and security"
                        maxlength="30" type="tel" autocomplete="off">
+                <br>
                 <span>
                   Standard call, messaging or data rates may apply.
                 </span>
@@ -108,8 +110,8 @@
 
           <div id='signupAction'>
 
-            <button id='submitButton' class='btn' type='submit' name='signup'></button>
-            <span>
+            <button id='submitButton' class='btn' type='submit' name='signup'>SIGN UP</button>
+            <br><span>
               By clicking Sign Up you agree to our
               <a href='#'>Terms of Use</a>
               and
@@ -120,15 +122,41 @@
 
         </div>
 
-        <div id='aside'>aside</div>
+        <aside>
+          <h2>Why you'll love it</h2>
+            <ul>
+              <li>See all your accounts in one place</li>
+              <li>Find the bext way to grow your money</li>
+              <li>Stay <a href='#'>safe and secure</a></li>
+            </ul>
+        </aside>
 
       </div>
 
 <!-- footer -->
-      <div id='footer'>
-        <div id='infoLinks'>infoLinks</div>
-        <div id='statement'>statement</div>
-        <div id='securityLinks'>securityLinks</div>
+      <footer>
+        <div id='infoLinks'>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li>&#124;</li>
+            <li><a href="#">Terms of Use</a><li>
+            <li>&#124;</li>
+            <li><a href="#">Privacy</a></li>
+            <li>&#124;</li>
+            <li><a href="#">Legal and Trademark Notices</a></li>
+            <li>&#124;</li>
+            <li><a href="#">About Intuit</a></li>
+          </ul>
+        </div> <!-- #infoLinks -->
+        <div id='statement'>
+          <span>Mint bill pay services provided by Intuit Payments Inc. under applicable
+            <a href="#">licenses</a>
+          </span>
+        </div>
+        <div id='securityLinks'>
+          <img src='/img/norton.png'>
+          <img src='/img/truste.png'>
+        </div>
         <div id='copyright'>copyright</div>
 
       </div>
