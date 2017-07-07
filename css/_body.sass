@@ -39,35 +39,37 @@ body
 
   #signupbody
     +equal-space(row)
-    height: 50em
+    min-height: 50em
     width: 50em
+    padding: 6.25%
+    box-shadow: 1px 3px 8px rgba(0,0,0,.2)
     // background: #dfd7d7
 
     #signupform
       width: 50%
-      height: 90%
-      margin: 5%
+      max-height: 87%
+      // margin: 6.25%
+      +equal-space(column)
+
       span:first-child
         color: $black
         font-size: 2em
-      fieldset
-        margin: 8% 0
+
       input[type="text"],
       input[type="tel"],
       input[type="password"]
-        height: 3em
+        height: 2.5em
         width: 80%
-      #lock
-        background-image: url('/img/lock.png')
-        background-size: cover
-        display: inline-block
-        height: 1.563em
-        width: 1.250em
+        margin-top: 3.5%
+
+      fieldset > div > span
+        font-size: .7em
 
 #signupAction
   button
     width: 27.5%
     height: 3em
+    margin-bottom: 1em
     border-radius: .5em
     border: none
     background: #45cae6

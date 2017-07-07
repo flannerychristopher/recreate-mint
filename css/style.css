@@ -122,32 +122,43 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 50em;
-  width: 50em; }
+  min-height: 50em;
+  width: 50em;
+  padding: 6.25%;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2); }
   #content #signupbody #signupform {
     width: 50%;
-    height: 90%;
-    margin: 5%; }
+    max-height: 87%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     #content #signupbody #signupform span:first-child {
       color: #333;
       font-size: 2em; }
-    #content #signupbody #signupform fieldset {
-      margin: 8% 0; }
     #content #signupbody #signupform input[type="text"],
     #content #signupbody #signupform input[type="tel"],
     #content #signupbody #signupform input[type="password"] {
-      height: 3em;
-      width: 80%; }
-    #content #signupbody #signupform #lock {
-      background-image: url("/img/lock.png");
-      background-size: cover;
-      display: inline-block;
-      height: 1.563em;
-      width: 1.250em; }
+      height: 2.5em;
+      width: 80%;
+      margin-top: 3.5%; }
+    #content #signupbody #signupform fieldset > div > span {
+      font-size: .7em; }
 
 #signupAction button {
   width: 27.5%;
   height: 3em;
+  margin-bottom: 1em;
   border-radius: .5em;
   border: none;
   background: #45cae6;
@@ -161,20 +172,22 @@ body {
 
 aside {
   height: 35em;
-  width: 25%;
-  margin: 5%;
-  padding: 1em;
+  width: 27%;
+  padding-left: 1em;
   background: #fff;
   border: none;
   border-left: 1px solid #7d7f80; }
   aside h2 {
     color: #333;
-    font-size: 1.1em; }
+    font-size: 1em; }
   aside ul {
     list-style: outside disc;
-    margin-left: 1em; }
+    margin-left: 1em;
+    font-size: .9em; }
     aside ul li {
       margin: 1.2em 0; }
+    aside ul a {
+      color: #7d7f80; }
 
 footer {
   display: -webkit-box;
@@ -191,9 +204,9 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 13.125em;
-  margin: 6.26em 0; }
+  margin: 100px;
+  font-size: .8em; }
   footer #infoLinks {
-    background: #b0b6e6;
     margin: 0 12%; }
     footer #infoLinks ul {
       display: -webkit-box;
@@ -215,7 +228,6 @@ footer {
         footer #infoLinks ul li a:hover {
           text-decoration: underline; }
   footer #statement {
-    background: yellow;
     text-align: center; }
     footer #statement a {
       color: #45cae6;
@@ -223,7 +235,6 @@ footer {
       footer #statement a:hover {
         text-decoration: underline; }
   footer #securityLinks {
-    background: red;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -239,4 +250,5 @@ footer {
     footer #securityLinks img {
       margin: 1em; }
   footer #copyright {
-    background: orange; }
+    text-align: center;
+    font-size: .9em; }
